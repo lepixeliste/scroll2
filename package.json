@@ -1,0 +1,46 @@
+{
+  "name": "@pixeliste/scroll2",
+  "version": "1.0.0",
+  "author": "CAL <contact@pixeliste.fr>",
+  "license": "ISC",
+  "description": "A lightweight SVG icon maker with TypeScript support",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "targets": {
+    "main": {
+      "optimize": true
+    },
+    "module": {
+      "optimize": true
+    }
+  },
+  "scripts": {
+    "watch": "parcel watch",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.ts",
+    "tsc:check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "latest",
+    "@parcel/transformer-typescript-types": "latest",
+    "parcel": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [
+    "svg",
+    "icon",
+    "maker",
+    "js",
+    "javascript",
+    "typescript",
+    "vue",
+    "react",
+    "svelte"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lepixeliste/scroll2.git"
+  }
+}
